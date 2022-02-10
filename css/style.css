@@ -18,10 +18,10 @@
  }
  
  body {
- display: flex;
- width: 100%;
- height: 100%;
- background-color: #ffffff;
+   display: flex;
+   width: 100%;
+   height: 100%;
+   background-color: #ffffff;
   }
  
  .container {
@@ -36,6 +36,7 @@
  .header {
 	display: flex;
 	position: relative;
+	align-items: center;
 	justify-content: center;
 	width: 100%;
 	height: 450px;
@@ -77,11 +78,7 @@
 	.logo-nav {
 		margin-top: 40px;
 	}
-
-	
  }
-
-
 
 
  @media (max-width: 640px) {
@@ -109,7 +106,6 @@
 	  display: flex; 
 	  margin-left: auto;
 	  margin-bottom: 60px;
-	  
   }
   .logo-nav {
 	flex-direction: column-reverse;
@@ -205,13 +201,8 @@
 			 display: none;
 		 } 
 	 }
-	
   
 /*__________________________*/
-
-
-
-
 
 
  header::after {
@@ -311,7 +302,6 @@
 	 font-family: OpenSans-Regular; 
 	}
 
- 
  .menu-link:hover::after {
     position: absolute;
 	right: 0;
@@ -343,7 +333,6 @@
 	font-family: OpenSans-Bold;
 	z-index: 1;
  }
- 
  
  
  /* ________ ТРЕНДЫ_________*/
@@ -732,7 +721,7 @@
  }
 
 
- /*_______ASIDE______*/
+ /*_________ASIDE________*/
  
  .aside-category h3 a {
   display: flex;
@@ -993,6 +982,7 @@
 	display: flex;
  }
  .popup {
+   display: flex;
 	position: fixed;
 	top: 0;
 	left: 0;
@@ -1002,6 +992,7 @@
 	display: none;
 	justify-content: center;
 	align-items: center;
+	z-index: 5;
  }
  
  .popup__close {
@@ -1021,7 +1012,7 @@
 	cursor: pointer;
  }
  .popup__close:hover {
-	 background-color: black;
+  background-color: black;
  }
  
  .popup__content {
@@ -1044,10 +1035,9 @@
 	  }
 
   .feedback .link h4 {	
-	  cursor: auto;
+   cursor: auto;
 	  }
 	
-
   .link:after {
 	content:"";
 	display:flex;
@@ -1065,6 +1055,8 @@
 	display : flex;
 	flex-direction: column;
 	width: 270px;
+	margin-right: auto;
+	margin-left: auto;
 	 }
  .form {
 	display : flex;
@@ -1073,16 +1065,16 @@
  }
  
  .select {
-	 box-sizing: border-box;
-	 width: 250px;
-	 height: 47px;
-	 margin-top: 10px;
-	 background-color: #f4f7f6;
-	 padding-left: 20px;
-	 padding-right: 20px;
-	 border: none;  
-	 font-family: OpenSans-Regular;
-	 font-size: 13px;
+   box-sizing: border-box;
+   width: 250px;
+   height: 47px;
+   margin-top: 10px;
+   background-color: #f4f7f6;
+   padding-left: 20px;
+   padding-right: 20px;
+   border: none;  
+   font-family: OpenSans-Regular;
+   font-size: 13px;
 	-webkit-appearance: none;
 	-moz-appearance: none;
 	background-image: url(../svg/form-arrows.svg);
@@ -1094,18 +1086,19 @@
   .select:focus {
 	outline: 1px solid #b59f5b;
   }
+
  .field-textarea {
 	min-width: 250px;
 	max-width: 250px;
 	min-height: 94px;
 	max-height: 250px;
 	margin-top: 10px;
-	 background-color: #f4f7f6;
-	 box-sizing: border-box;
-	 border: none;  
-	 font-family: OpenSans-Regular;
+   background-color: #f4f7f6;
+   box-sizing: border-box;
+   border: none;  
+   font-family: OpenSans-Regular;
 	color: black;
-	 font-size: 13px;
+   font-size: 13px;
 	padding: 20px;
  }
 
@@ -1119,26 +1112,26 @@
 	font-size: 13px;
  }
  .popap-container .button-email {
-	 width: 250px;
+	width: 250px;
  }
 
  .radio input {
-	  display: none; 
+	display: none; 
 	}
 
 	.radio span {
-		position: relative;
-		display: inline-block;
-		width: 25px;
-		height: 25px;
-		background-image: url(../svg/form-empty-circle.svg);
-		background-size: 25px;
-		background-repeat: no-repeat;
-		background-position: center;
-		top: 5px;
+	position: relative;
+	display: inline-block;
+	width: 25px;
+	height: 25px;
+	background-image: url(../svg/form-empty-circle.svg);
+	background-size: 25px;
+	background-repeat: no-repeat;
+	background-position: center;
+	top: 5px;
 	  }
-	  .radio input:checked + span { 
-		background-image: url(../svg/form-circle.svg);
+  .radio input:checked + span { 
+	background-image: url(../svg/form-circle.svg);
 	  }
  
 /*_______________________________________*/
@@ -1151,10 +1144,10 @@
 	margin: auto;
 	 }
  .shop .trends-title {
-	 height: 62px;
+	height: 62px;
  }
  .shop .trends-title-name {
-	 margin-top: 0;
+	margin-top: 0;
  }
 .shop-wrp {
   display: flex;
@@ -1219,6 +1212,7 @@
 	font-family: OpenSans-Bold;
  }
 
+
  @media (min-width: 641px) and (max-width: 1200px) {
 .shop-wrp {
 	flex-direction: column;
@@ -1239,6 +1233,7 @@
 	margin-right: auto;
 }
  }
+
 
  @media (max-width: 640px) {
 	.shop-wrp .shop-container {
@@ -1262,7 +1257,6 @@
 		margin-bottom: 60px;
 	}
  }
-
 
 
  /*______________________________________*/
