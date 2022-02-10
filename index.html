@@ -28,31 +28,31 @@
 						<input type="checkbox" class="menu-toggle" id="toggle">
 
 
-						<nav class="nav">
-
-							<ul class="menu-list">
+						<nav class="nav" id="nav-toggle">
+							<label for="toggle" class="toggle-close">&times;</label>
+							<ul class="menu-list" id="menu-list-toggle">
 								<li class="menu-list-item">
-									<a href="#0" class="menu-link">Главная</a>
+									<a href="index.html" class="menu-link">Главная</a>
 								</li>
 								<li class="menu-list-item">
-									<a href="#0" class="menu-link">Посты</a>
+									<a href="#posts" class="menu-link">Посты</a>
 								</li>
 								<li class="menu-list-item">
-									<a href="#0" class="menu-link">Статьи</a>
+									<a href="#articles" class="menu-link">Статьи</a>
 								</li>
 								<li class="menu-list-item">
-									<a href="#0" class="menu-link">Теги</a>
+									<a href="#tags" class="menu-link">Теги</a>
 								</li>
 								<li class="menu-list-item">
-									<a href="#0" class="menu-link">Темы</a>
+									<a href="#categories" class="menu-link">Темы</a>
 								</li>
 								<li class="menu-list-item">
-									<a href="#0" class="menu-link">Контакты</a>
+									<a href="#social" class="menu-link">Контакты</a>
 								</li>
 							</ul>
-							<label for="toggle" class="toggle-close">&times;</label>
+
 						</nav>
-						<label class="menu-burger" for="toggle">
+						<label class="menu-burger" for="toggle" id="nav-burger-toggle">
 							<span></span>
 						</label>
 					</div>
@@ -144,7 +144,7 @@
 
 		<div class="content">
 
-			<main class="main">
+			<main class="main" id="articles">
 
 				<article class="post-list">
 					<div class="post-list-preview">
@@ -292,8 +292,7 @@
 
 				<article class="post-list">
 					<div class="post-list-preview">
-						<img class="picture"
-							src="https://netology-code.github.io/html-2-diploma/sources/images/last-post6.jpg" alt="Горы">
+						<img class="picture" src="images/last-post6.jpg" alt="Горы">
 					</div>
 					<div class="post-list-info">
 						<div class="category">
@@ -325,7 +324,7 @@
 
 			<aside class="aside">
 
-				<section class="side-bar">
+				<section class="side-bar" id="posts">
 					<div class="aside-category">
 						<h3><a href="#0" class="aside-category-link">Новые посты</a></h3>
 					</div>
@@ -411,7 +410,7 @@
 					</form>
 				</section>
 
-				<section class="tags">
+				<section class="tags" id="tags">
 					<div class="aside-category">
 						<h3><a href="#0" class="aside-category-link">Теги</a></h3>
 					</div>
@@ -453,7 +452,7 @@
 					</div>
 				</section>
 
-				<section class="categories">
+				<section class="categories" id="categories">
 					<div class="aside-category">
 						<h3><a href="#0" class="aside-category-link">Темы</a></h3>
 					</div>
@@ -657,7 +656,7 @@
 
 		<footer class="footer">
 
-			<address class="social">
+			<address class="social" id="social">
 				<ul class="social-list">
 					<li class="social-list-item">
 						<a href="#0" class="social-link social-link-twitter" data-tooltip="twitter">
