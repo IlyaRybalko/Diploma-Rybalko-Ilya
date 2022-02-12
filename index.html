@@ -24,34 +24,40 @@
 							<img class="logo-img" src="svg/noemi-logo.svg" alt="Лого">
 						</a>
 					</div>
+					<div class="nav-burger-toggle">
 
-					<div class="menu-burger">
-						<span></span>
+						<input type="checkbox" class="menu-toggle" id="toggle">
+
+						<nav class="nav" id="nav-toggle">
+							<label for="toggle" class="toggle-close">&times;</label>
+							<ul class="menu-list" id="menu-list-toggle">
+								<li class="menu-list-item">
+									<a href="index.html" class="menu-link">Главная</a>
+								</li>
+								<li class="menu-list-item">
+									<a href="#posts" class="menu-link">Посты</a>
+								</li>
+								<li class="menu-list-item">
+									<a href="#articles" class="menu-link">Статьи</a>
+								</li>
+								<li class="menu-list-item">
+									<a href="#tags" class="menu-link">Теги</a>
+								</li>
+								<li class="menu-list-item">
+									<a href="#categories" class="menu-link">Темы</a>
+								</li>
+								<li class="menu-list-item">
+									<a href="#social" class="menu-link">Контакты</a>
+								</li>
+							</ul>
+						</nav>
+
+						<label class="menu-burger" for="toggle" id="nav-burger-toggle">
+							<span></span>
+						</label>
+
 					</div>
 
-					<nav class="nav">
-
-						<ul class="menu-list">
-							<li class="menu-list-item">
-								<a href="#0" class="menu-link">Главная</a>
-							</li>
-							<li class="menu-list-item">
-								<a href="#0" class="menu-link">Посты</a>
-							</li>
-							<li class="menu-list-item">
-								<a href="#0" class="menu-link">Статьи</a>
-							</li>
-							<li class="menu-list-item">
-								<a href="#0" class="menu-link">Теги</a>
-							</li>
-							<li class="menu-list-item">
-								<a href="#0" class="menu-link">Темы</a>
-							</li>
-							<li class="menu-list-item">
-								<a href="#0" class="menu-link">Контакты</a>
-							</li>
-						</ul>
-					</nav>
 				</div>
 
 				<div class="header-title">
@@ -64,7 +70,7 @@
 
 		<div class="trends">
 			<div class="trends-title">
-				<h2 class="trends-title-name">Сейчас в тренде</h2>
+				<h2 class="trends-title-name" id="trends-title-name">Сейчас в тренде</h2>
 
 			</div>
 			<div class="container-trends">
@@ -137,7 +143,7 @@
 
 		<div class="content">
 
-			<main class="main">
+			<main class="main" id="articles">
 
 				<article class="post-list">
 					<div class="post-list-preview">
@@ -285,8 +291,7 @@
 
 				<article class="post-list">
 					<div class="post-list-preview">
-						<img class="picture"
-							src="https://netology-code.github.io/html-2-diploma/sources/images/last-post6.jpg" alt="Горы">
+						<img class="picture" src="images/last-post6.jpg" alt="Горы">
 					</div>
 					<div class="post-list-info">
 						<div class="category">
@@ -318,7 +323,7 @@
 
 			<aside class="aside">
 
-				<section class="side-bar">
+				<section class="side-bar" id="posts">
 					<div class="aside-category">
 						<h3><a href="#0" class="aside-category-link">Новые посты</a></h3>
 					</div>
@@ -336,7 +341,7 @@
 
 						<article class="side-bar-post-list">
 							<div class="side-bar-post-list-preview">
-								<img class="picture" src=images/151.jpg alt="Девушка занимается йогой">
+								<img class="picture-side-bar" src=images/151.jpg alt="Девушка занимается йогой">
 							</div>
 							<div class="side-bar-post-list-info">
 								<time class="side-bar-time">14 июня 2019</time>
@@ -346,7 +351,7 @@
 
 						<article class="side-bar-post-list">
 							<div class="side-bar-post-list-preview">
-								<img class="picture" src=images/45.jpg alt="Кресло на балконе">
+								<img class="picture-side-bar" src=images/45.jpg alt="Кресло на балконе">
 							</div>
 							<div class="side-bar-post-list-info">
 								<time class="side-bar-time">14 июня 2019</time>
@@ -358,7 +363,7 @@
 
 						<article class="side-bar-post-list">
 							<div class="side-bar-post-list-preview">
-								<img class="picture" src=images/501.jpg alt="Сервированный стол">
+								<img class="picture-side-bar" src=images/501.jpg alt="Сервированный стол">
 							</div>
 							<div class="side-bar-post-list-info">
 								<time class="side-bar-time">14 июня 2019</time>
@@ -368,15 +373,16 @@
 
 						<article class="side-bar-post-list">
 							<div class="side-bar-post-list-preview">
-								<img class="picture" src=images/7.jpg alt="Девушки с длинными волосами">
+								<img class="picture-side-bar" src=images/7.jpg alt="Девушки с длинными волосами">
 							</div>
 							<div class="side-bar-post-list-info">
 								<time class="side-bar-time">14 июня 2019</time>
 								<h4> <a href="#0" class="side-bar-post-list-name">Лучшие прически для распущенных волос</a>
 								</h4>
 							</div>
+						</article>
 					</div>
-					</article>
+
 
 					<form class="search">
 						<label class="search-group">
@@ -404,7 +410,7 @@
 					</form>
 				</section>
 
-				<section class="tags">
+				<section class="tags" id="tags">
 					<div class="aside-category">
 						<h3><a href="#0" class="aside-category-link">Теги</a></h3>
 					</div>
@@ -446,7 +452,7 @@
 					</div>
 				</section>
 
-				<section class="categories">
+				<section class="categories" id="categories">
 					<div class="aside-category">
 						<h3><a href="#0" class="aside-category-link">Темы</a></h3>
 					</div>
@@ -493,9 +499,9 @@
 
 					<input type="checkbox" class="popup-switch" id="popup1">
 					<div class="popup">
-						<div class="popup__content">
+						<div class="popup__content" id="popup__content">
 							<label for="popup1" class="popup__close">&times;</label>
-							<div class="feedback">
+							<div class="feedback" id="feedback">
 
 								<div class="link">
 									<h4>ВАШ ФИДБЕК</h4>
@@ -556,7 +562,7 @@
 
 		<div class="shop">
 			<div class="trends-title">
-				<h2 class="trends-title-name">Наши изделия</h2>
+				<h2 class="trends-title-name" id="trends-title-name">Наши изделия</h2>
 			</div>
 
 			<div class="shop-wrp">
@@ -607,7 +613,6 @@
 							</div>
 							<div class="shop-price">
 								<div class="price">
-
 									<br>
 									<p class="new-price"> 3500 &#8381</p>
 								</div>
@@ -650,7 +655,7 @@
 
 		<footer class="footer">
 
-			<address class="social">
+			<address class="social" id="social">
 				<ul class="social-list">
 					<li class="social-list-item">
 						<a href="#0" class="social-link social-link-twitter" data-tooltip="twitter">
