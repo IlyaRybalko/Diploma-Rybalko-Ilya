@@ -354,7 +354,7 @@
 	font-size: 20px;
 	text-transform: uppercase;
  }
- #trends-title-name a {
+ #trends_title_name a {
 	text-decoration: none;
 	font-family: OpenSans-Bold;
 	font-size: 20px;
@@ -369,7 +369,7 @@
 	width:65px; 
 	border-bottom: 3px solid #e1d9bd;   
   }
-  #trends-title-name::after {
+  #trends_title_name::after {
 	margin-top: 8px;
   }
 
