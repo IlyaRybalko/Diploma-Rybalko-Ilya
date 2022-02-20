@@ -37,7 +37,7 @@
 	align-items: center;
 	justify-content: center;
 	width: 100%;
-	height: auto; /*450*/
+	height: auto;
 	background-image: url(../images/banner-bg.jpg);
 	background-size: cover;
 	background-color: #515a5a; 
@@ -46,12 +46,12 @@
  @media (min-width: 641px) and (max-width: 1200px) {
 	.header {
 		background-image: url(../images/banner-bg-tablet.jpg);
-		height: auto;/*392*/
+		height: auto;
 		background-position: bottom;
 	}
 	.header .container-header {
 		max-width : 698px;
-		height: auto;/*392*/
+		height: auto;
 	}
 	.logo-nav .nav {
 		display: none;
@@ -89,12 +89,12 @@
 
 	.header {
 		background-image: url(../images/banner-mobile.jpg);
-		height: auto;/*639*/
+		height: auto;
 		background-position: bottom;	
 	}
 	.header .container-header {
 		max-width : 330px;
-		height: auto;/*639*/
+		height: auto;
 		margin: 0;
 	}
 	.logo-nav .nav {
@@ -170,7 +170,6 @@
 	 .menu-toggle {
 		 display: none;
 	 }
-	
 	 }
 	 
 	 @media (max-width: 640px) {
@@ -182,13 +181,13 @@
 			width: 150px;
 			height: 220px;
 			top: 20px;
-			
 			right: 40px;
 			background: rgba(0, 0, 0, 0.5);
 		}
 		.menu-toggle:checked ~ #nav-burger-toggle {
 			display: none;
 		 }
+
 		 .menu-toggle:checked + .nav .toggle-close {
 		   display: block;
 		   position: absolute;
@@ -246,7 +245,6 @@
 	display: flex;
 	width: 215px;
 	padding: 15px; 
-	
  }
  
  .logo-img {
@@ -678,7 +676,6 @@
 	line-height: 130%; 
 	text-decoration: none;
 	color: #000;
-
  }
  
  .post-list-description {
@@ -1298,6 +1295,10 @@
  #trends_title_name2::after {
 	margin-top: 8px;
   }
+  #trends_title_name2 a {
+	  text-decoration: none;
+	  color: #000;
+  }
 .shop-wrp {
   display: flex;
   flex-direction: row;	
@@ -1395,7 +1396,7 @@
 		margin: 60px 0;
 	}
 	.shop-wrp .shop-three {
-		margin: 60px 0 0 0;
+		margin: 20px 0 0 0;
 	} 
 	.shop-wrp .shop-wrp-one-two {
 		flex-direction: column;
