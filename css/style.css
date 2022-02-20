@@ -80,6 +80,13 @@
 
 
  @media (max-width: 640px) {
+.container {
+	max-width: 360px;
+	overflow: hidden;
+	align-items: center;
+	justify-content: center;
+}
+
 	.header {
 		background-image: url(../images/banner-mobile.jpg);
 		height: auto;/*639*/
@@ -116,6 +123,11 @@
    margin-top: 0px;
 }
  }
+ @media (max-width: 640px) and (orientation: landscape) {
+	.container {
+		max-width: 768px;
+	}
+ }
 
 
 /*______ВСПЛЫВАЮЩЕЕ МЕНЮ________*/
@@ -128,7 +140,7 @@
 		position: fixed;
 		width: 150px;
 		height: 220px;
-		top: -10px;
+		top: 20px;
 		right: 50px;
 		background: rgba(0, 0, 0, 0.5);
 	}
@@ -169,8 +181,9 @@
 			position: fixed;
 			width: 150px;
 			height: 220px;
-			top: -10px;
-			right: 230px;
+			top: 20px;
+			
+			right: 40px;
 			background: rgba(0, 0, 0, 0.5);
 		}
 		.menu-toggle:checked ~ #nav-burger-toggle {
@@ -200,7 +213,7 @@
 			display: none;
 		 } 
 	 }
-  
+	 
 /*__________________________*/
 
 
@@ -226,13 +239,14 @@
  .logo-nav {
 	display: flex;
 	justify-content: center;
+	margin-top: 15px;
  }
  
  .logo {
 	display: flex;
 	width: 215px;
 	padding: 15px; 
-	margin-top: 15px;
+	
  }
  
  .logo-img {
@@ -240,7 +254,7 @@
  }
  .menu-toggle {
 	display: none;
-}
+}  
 
  .menu-burger {
    display: none;
@@ -281,7 +295,7 @@
 	width: 985px;
 	height: 73px;
 	padding: 15px;
-	margin-top: 15px;
+	
  }
  .toggle-close {
 	 display: none;
